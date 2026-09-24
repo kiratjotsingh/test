@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Made by Kirat — Creative studio</title>
+  <meta name="description" content="Made by Kirat is an independent creative studio for brands building what comes next.">
+
+  <meta name="theme-color" content="#090a0f">
+
+  <!-- TODO: replace YOUR-DOMAIN.com with your real domain (search & replace across all files) -->
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+  <meta property="og:title" content="Made by Kirat — Creative studio">
+  <meta property="og:description" content="Ideas with a point of view. Branding, design, motion, and marketing by Made by Kirat.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Made by Kirat — Creative studio">
+  <meta name="twitter:description" content="Ideas with a point of view. Branding, design, motion, and marketing by Made by Kirat.">
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Made by Kirat",
+    "description": "Independent creative studio for branding, graphic design, motion, video editing and digital marketing.",
+    "url": "https://YOUR-DOMAIN.com/",
+    "email": "hello@madebykirat.com",
+    "image": "https://YOUR-DOMAIN.com/og-image.png"
+  }
+  </script>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Applies the saved theme before first paint (no flash) and enables reveal animations -->
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      if (localStorage.getItem('mbk-theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  </script>
+
+  <!-- Optional privacy-friendly analytics (uncomment and set your domain). If you add analytics, update privacy.html.
+  <script defer data-domain="YOUR-DOMAIN.com" src="https://plausible.io/js/script.js"></script>
+  -->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="portfolio-app">
+
+    <div class="custom-cursor" aria-hidden="true"></div>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" id="site-header">
+      <div class="container-wide nav-inner">
+        <a class="brand-mark" data-cursor="hover" href="#main">
+          <span class="brand-dot"></span>
+          <span>Made by <strong>Kirat</strong></span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a data-cursor="hover" href="#work">Work</a>
+          <a data-cursor="hover" href="#services">Services</a>
+          <a data-cursor="hover" href="#about">About</a>
+          <a data-cursor="hover" href="contact.html">Contact
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="theme-toggle" id="theme-toggle" data-cursor="hover" aria-label="Switch to light theme">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <span class="theme-label">Light</span>
+          </button>
+
+          <button type="button" class="mobile-menu-button" id="mobile-menu-toggle" data-cursor="hover" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#work">Work
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#services">Services
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#about">About
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html">Contact
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </nav>
+    </header>
+
+    <main id="main">
+
+      <!-- ===================== HERO ===================== -->
+      <section class="hero-section">
+        <div class="hero-orb orb-one"></div>
+        <div class="hero-orb orb-two"></div>
+        <div class="hero-orb orb-three"></div>
+
+        <div class="container-wide hero-content">
+          <div data-reveal>
+            <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> Independent creative studio · 2026</p>
+          </div>
+
+          <div>
+            <h1>
+              <span class="hero-line"><span class="hero-line-inner" style="--line-delay: 100ms">Ideas with a</span></span>
+              <span class="hero-line"><span class="hero-line-inner" style="--line-delay: 260ms"><span class="gradient-text">point of view.</span></span></span>
+            </h1>
+          </div>
+
+          <div data-reveal style="--reveal-delay: 240ms">
+            <div class="hero-bottom">
+              <p class="hero-copy">Made by Kirat is a design, branding, and marketing studio for teams building what comes next.</p>
+              <div class="hero-actions">
+                <a class="button-primary" data-cursor="hover" href="#work">View work
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a class="button-quiet" data-cursor="hover" href="contact.html">Let's talk
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7 10 10"/><path d="M17 7v10H7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-scroll-note">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+          </div>
+        </div>
+
+        <div class="hero-side-label" id="hero-side-label">MK / 01—26</div>
+      </section>
+
+      <!-- ===================== SERVICES ===================== -->
+      <section class="section-pad services-section" id="services">
+        <div class="container-wide">
+          <div data-reveal>
+            <div class="section-heading-row">
+              <div>
+                <p class="eyebrow">What we do</p>
+                <h2>The right mix of<br><span class="muted-heading">strategy &amp; spark.</span></h2>
+              </div>
+              <span class="section-index">01 / 05</span>
+            </div>
+          </div>
+
+          <div class="services-grid">
+            <div data-reveal style="--reveal-delay: 0ms">
+              <article class="service-card" data-cursor="hover">
+                <div class="service-top">
+                  <span class="service-number">01</span>
+                  <span class="service-icon">✦</span>
+                </div>
+                <h3>Branding</h3>
+                <p>Identities with a point of view, built to hold attention long after the first impression.</p>
+                <span class="service-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-neg" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </article>
+            </div>
+
+            <div data-reveal style="--reveal-delay: 80ms">
+              <article class="service-card" data-cursor="hover">
+                <div class="service-top">
+                  <span class="service-number">02</span>
+                  <span class="service-icon">◈</span>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Posters, systems, and visual worlds that make the message feel impossible to ignore.</p>
+                <span class="service-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-neg" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </article>
+            </div>
+
+            <div data-reveal style="--reveal-delay: 160ms">
+              <article class="service-card" data-cursor="hover">
+                <div class="service-top">
+                  <span class="service-number">03</span>
+                  <span class="service-icon">◒</span>
+                </div>
+                <h3>Motion / Animation</h3>
+                <p>Movement with intention — from a single kinetic detail to a full product universe.</p>
+                <span class="service-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-neg" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </article>
+            </div>
+
+            <div data-reveal style="--reveal-delay: 240ms">
+              <article class="service-card" data-cursor="hover">
+                <div class="service-top">
+                  <span class="service-number">04</span>
+                  <span class="service-icon">▣</span>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Cuts that find the pulse of a story and keep it moving, frame by unforgettable frame.</p>
+                <span class="service-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-neg" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </article>
+            </div>
+
+            <div data-reveal style="--reveal-delay: 320ms">
+              <article class="service-card" data-cursor="hover">
+                <div class="service-top">
+                  <span class="service-number">05</span>
+                  <span class="service-icon">↗</span>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Campaigns that pair sharp creative with clear journeys from attention to action.</p>
+                <span class="service-arrow">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rotate-neg" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== SELECTED WORK ===================== -->
+      <section class="section-pad work-section" id="work">
+        <div class="container-wide">
+          <div data-reveal>
+            <div class="section-heading-row">
+              <div>
+                <p class="eyebrow">Selected work</p>
+                <h2>A little of<br><span class="muted-heading">what we make.</span></h2>
+              </div>
+              <a class="text-link desktop-only" data-cursor="hover" href="#work">View selected work
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="work-grid">
+            <!-- Project pages: create work/<slug>.html for each card, or change the hrefs -->
+            <div class="project-slot slot-1" data-reveal>
+              <a class="project-card" data-cursor="hover" href="work/aura-neurotech.html">
+                <div class="project-image-wrap">
+                  <img alt="Aura NeuroTech — branding and spatial interface project by Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1654198340681-a2e0fc449f1b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85">
+                  <div class="project-color-wash wash-violet"></div>
+                  <span class="project-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </span>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <p class="project-category">Branding &amp; Spatial UI</p>
+                    <h3>Aura NeuroTech</h3>
+                  </div>
+                  <span class="project-year">2026</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="project-slot slot-2" data-reveal style="--reveal-delay: 100ms">
+              <a class="project-card" data-cursor="hover" href="work/lumina-3d-motion.html">
+                <div class="project-image-wrap">
+                  <img alt="Lumina Audio — 3D motion and animation project by Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.pexels.com/photos/26545220/pexels-photo-26545220.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400">
+                  <div class="project-color-wash wash-cyan"></div>
+                  <span class="project-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </span>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <p class="project-category">Motion &amp; Animation</p>
+                    <h3>Lumina Audio</h3>
+                  </div>
+                  <span class="project-year">2025</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="project-slot slot-3" data-reveal>
+              <a class="project-card" data-cursor="hover" href="work/hyperion-marketing.html">
+                <div class="project-image-wrap">
+                  <img alt="Hyperion Energy — digital marketing campaign by Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1686425374911-e0d752e09806?auto=format&amp;fit=crop&amp;w=1400&amp;q=85">
+                  <div class="project-color-wash wash-emerald"></div>
+                  <span class="project-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </span>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <p class="project-category">Digital Marketing</p>
+                    <h3>Hyperion Energy</h3>
+                  </div>
+                  <span class="project-year">2025</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="project-slot slot-4" data-reveal style="--reveal-delay: 100ms">
+              <a class="project-card" data-cursor="hover" href="work/vortex-cinema.html">
+                <div class="project-image-wrap">
+                  <img alt="Vortex Film Studio — video editing and graphic design project by Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1544380904-c686aad2fc40?auto=format&amp;fit=crop&amp;w=1400&amp;q=85">
+                  <div class="project-color-wash wash-slate"></div>
+                  <span class="project-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </span>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <p class="project-category">Video Editing &amp; Graphic Design</p>
+                    <h3>Vortex Film Studio</h3>
+                  </div>
+                  <span class="project-year">2025</span>
+                </div>
+              </a>
+            </div>
+
+            <div class="project-slot slot-5" data-reveal>
+              <a class="project-card" data-cursor="hover" href="work/solaris-graphic.html">
+                <div class="project-image-wrap">
+                  <img alt="Solaris Editions — graphic design project by Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.pexels.com/photos/31622943/pexels-photo-31622943.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400">
+                  <div class="project-color-wash wash-orange"></div>
+                  <span class="project-open">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                  </span>
+                </div>
+                <div class="project-meta">
+                  <div>
+                    <p class="project-category">Graphic Design</p>
+                    <h3>Solaris Editions</h3>
+                  </div>
+                  <span class="project-year">2024</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section class="section-pad about-section" id="about">
+        <div class="container-wide about-layout">
+          <div class="about-image-wrap" data-reveal>
+            <img alt="Portrait of Kirat, founder and creative director of Made by Kirat" width="1400" height="1037" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1635380318102-cfa0b2c7639d?auto=format&amp;fit=crop&amp;w=1200&amp;q=85">
+            <div class="about-image-caption">Kirat / Founder &amp; Creative Director</div>
+          </div>
+
+          <div class="about-copy" data-reveal style="--reveal-delay: 120ms">
+            <p class="eyebrow">A small studio with a big lens</p>
+            <h2>We make work<br>that <span class="gradient-text">moves.</span></h2>
+            <p class="about-lead">The best creative work does more than look good. It changes the temperature in the room, makes the complicated feel clear, and gives good ideas somewhere to go.</p>
+            <p class="about-detail">Made by Kirat partners with ambitious founders, teams, and brands to turn a sharp idea into a world people want to step inside.</p>
+            <a class="text-link" data-cursor="hover" href="contact.html">Start a conversation
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- TODO: only keep numbers you can back up. Edit data-count and the visible number together. -->
+        <div class="container-wide stats-row">
+          <div class="stat-item" data-reveal>
+            <span class="stat-number"><span data-count="42">42</span><sup>+</sup></span>
+            <span class="stat-label">projects shipped</span>
+          </div>
+          <div class="stat-item" data-reveal style="--reveal-delay: 100ms">
+            <span class="stat-number"><span data-count="18">18</span><sup>+</sup></span>
+            <span class="stat-label">happy clients</span>
+          </div>
+          <div class="stat-item" data-reveal style="--reveal-delay: 200ms">
+            <span class="stat-number"><span data-count="7" data-pad="2">07</span><sup>+</sup></span>
+            <span class="stat-label">years in the game</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CLIENTS MARQUEE ===================== -->
+      <!-- TODO: replace with real client / project names -->
+      <section class="clients-section">
+        <div class="container-wide">
+          <div class="section-heading-row clients-heading">
+            <div>
+              <p class="eyebrow">A few good people</p>
+              <h2>Brands I've<br><span class="muted-heading">worked with.</span></h2>
+            </div>
+            <span class="section-index">02 / 05</span>
+          </div>
+        </div>
+
+        <div class="marquee-window">
+          <!-- Logos are listed twice so the looping animation is seamless -->
+          <div class="marquee-track" id="marquee-track">
+            <div class="client-logo">AURA<span>✦</span></div>
+            <div class="client-logo">LUMINA<span>✦</span></div>
+            <div class="client-logo">HYPERION<span>✦</span></div>
+            <div class="client-logo">VORTEX<span>✦</span></div>
+            <div class="client-logo">SOLARIS<span>✦</span></div>
+            <div class="client-logo">NOVA<span>✦</span></div>
+            <div class="client-logo">NORTHSTAR<span>✦</span></div>
+            <div class="client-logo">AURA<span>✦</span></div>
+            <div class="client-logo">LUMINA<span>✦</span></div>
+            <div class="client-logo">HYPERION<span>✦</span></div>
+            <div class="client-logo">VORTEX<span>✦</span></div>
+            <div class="client-logo">SOLARIS<span>✦</span></div>
+            <div class="client-logo">NOVA<span>✦</span></div>
+            <div class="client-logo">NORTHSTAR<span>✦</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROCESS ===================== -->
+      <section class="section-pad process-section">
+        <div class="container-wide">
+          <div data-reveal>
+            <div class="section-heading-row">
+              <div>
+                <p class="eyebrow">How we work</p>
+                <h2>Simple process.<br><span class="muted-heading">Strong outcomes.</span></h2>
+              </div>
+              <span class="section-index">03 / 05</span>
+            </div>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-step" data-reveal style="--reveal-delay: 0ms">
+              <span class="process-number">01</span>
+              <span class="process-dot"></span>
+              <h3>Discover</h3>
+              <p>We find the sharpest version of the idea.</p>
+              <span class="process-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+            <div class="process-step" data-reveal style="--reveal-delay: 100ms">
+              <span class="process-number">02</span>
+              <span class="process-dot"></span>
+              <h3>Design</h3>
+              <p>We build the system, not just the surface.</p>
+              <span class="process-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+            <div class="process-step" data-reveal style="--reveal-delay: 200ms">
+              <span class="process-number">03</span>
+              <span class="process-dot"></span>
+              <h3>Deliver</h3>
+              <p>We make the work real, ready, and memorable.</p>
+              <span class="process-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </div>
+            <div class="process-step" data-reveal style="--reveal-delay: 300ms">
+              <span class="process-number">04</span>
+              <span class="process-dot"></span>
+              <h3>Grow</h3>
+              <p>We stay close as the work finds its people.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TESTIMONIALS ===================== -->
+      <section class="section-pad testimonial-section">
+        <div class="container-wide testimonial-layout">
+          <div data-reveal>
+            <p class="eyebrow">Nice things people said</p>
+            <div class="quote-mark">“</div>
+            <div class="testimonial-swap" id="testimonial-swap" aria-live="polite">
+              <blockquote id="testimonial-quote">Kirat took an idea that was hard to explain and made it feel obvious. The new identity changed how every room listened to us.</blockquote>
+              <div class="testimonial-author">
+                <span class="author-avatar" id="testimonial-avatar">M</span>
+                <div>
+                  <strong id="testimonial-name">Maya Chen</strong>
+                  <span id="testimonial-role">Co-founder, Aura BioTech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-controls" data-reveal style="--reveal-delay: 120ms">
+            <span class="section-index">04 / 05</span>
+            <div class="control-buttons">
+              <button type="button" id="testimonial-prev" aria-label="Previous testimonial" data-cursor="hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button type="button" id="testimonial-next" aria-label="Next testimonial" data-cursor="hover">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+            </div>
+            <div class="testimonial-count"><span id="testimonial-current" style="font-size:inherit;color:inherit">01</span> <span>/ <span id="testimonial-total">03</span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FINAL CTA ===================== -->
+      <section class="final-cta-section" id="start">
+        <div class="container-wide final-cta" data-reveal>
+          <div class="cta-glow"></div>
+          <p class="eyebrow">Your move</p>
+          <h2>Have a project<br><span>in mind?</span></h2>
+          <a class="button-light" data-cursor="hover" href="contact.html">Let's make it real
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <div class="cta-scribble">✳</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container-wide footer-top">
+        <div>
+          <p class="eyebrow">Made for the curious</p>
+          <h2>Good work starts<br><span class="gradient-text">with a good chat.</span></h2>
+        </div>
+        <a class="circle-arrow" data-cursor="hover" aria-label="Go to contact page" href="contact.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+      </div>
+
+      <div class="container-wide footer-bottom">
+        <span class="footer-copyright">© <span id="year">2026</span> Made by Kirat</span>
+        <div class="footer-links">
+          <a data-cursor="hover" href="#work">Work</a>
+          <a data-cursor="hover" href="#about">About</a>
+          <a data-cursor="hover" href="contact.html">Contact</a>
+          <a data-cursor="hover" href="privacy.html">Privacy</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://instagram.com/" target="_blank" rel="noreferrer" data-cursor="hover">Instagram</a>
+          <a href="https://behance.net/" target="_blank" rel="noreferrer" data-cursor="hover">Behance</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noreferrer" data-cursor="hover">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="container-wide footer-email">
+        <a href="mailto:hello@madebykirat.com" data-cursor="hover">hello@madebykirat.com</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
